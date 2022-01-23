@@ -1,0 +1,277 @@
+body {
+  background-image: url('background.jpg');
+  margin: 0;
+}
+
+.frame {
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* navigator */
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+  display: inline;
+  align-self: center;
+  margin: 0;
+  margin-left: 15px;
+}
+
+ul {
+  margin: 0;
+}
+
+.site-name {
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  font-size: 32px;
+  color: Gold;
+}
+
+.nav-menu {
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+  font-size: 27px;
+  color: Ivory;
+  margin-top: 10;
+}
+
+a {
+  text-decoration: none;
+}
+
+#site-menu:visited {
+  color: Gold;
+}
+
+a:hover {
+  color: LemonChiffon;
+  transition: 0.3s;
+}
+
+/* dashboard */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 260px;
+}
+
+#comment {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 43px;
+  color: Gray;
+}
+
+.sample {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 65px;
+  color: Wheat;
+}
+
+#highlight {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 38px;
+  color: LightCyan;
+}
+
+h1 {
+  margin: 0;
+  align-self: center;
+}
+
+.introduce {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  color: Ivory;
+  align-self: center;
+}
+
+/* footer */
+
+.bottom {
+  background-color: #1A1D18;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: Ivory;
+  margin-bottom: 40px;
+  border-bottom: 2px solid Ivory;
+}
+
+.links>a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: Ivory;
+  margin-left: 15px;
+}
+
+.links>a:hover {
+  color: LemonChiffon;
+}
+
+.blog {
+  width: 99px;
+  height: 99px;
+}
+
+.mail {
+  width: 100px;
+  height: 100px;
+}
+
+.github {
+  width: 200px;
+  height: 200px;
+}
+
+/* About */
+
+#profile {
+  background-color: #1A1D18;
+  padding-top: 120px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#profile-picture {
+  width: 400px;
+  /*margin-right: 60px;*/
+}
+
+.introduction {
+  color: Ivory;
+}
+
+.introduction>h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.introduction>p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+
+/* favorites */
+
+.favorite-item {
+  list-style-type: none;
+}
+
+.faborite-title {
+  color: Ivory;
+}
+
+#favorite {
+  background-color: #1A1D18;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-item {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  margin: 0 30px;
+  margin-top: 250px;
+  transition: all .4s;
+}
+
+.favorite-item img {
+  width: 100%;
+}
+
+.favorite-item:hover {
+  flex-basis: 360px;
+}
+
+
+.favorite-profile {
+  position: relative;
+}
+
+.favorite-profile:before {
+  content: ' ';
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.95+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.95) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f2000000',GradientType=0 ); /* IE6-9 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+}
+
+.favorite-contents {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5px;
+}
+
+.favorite-contents>h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 30px;
+  margin-left: 15px;
+  color: khaki;
+}
+
+.favorite-contents>p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  color: Ivory;
+  min-width: 150px;
+  max-height: 0;
+  overflow: hidden;
+  line-height: 1.2;
+  transition: all .4s;
+  opacity: 0;
+  transition-delay: .4s;
+}
+
+.favorite-item:hover .favorite-contents p {
+  opacity: 1;
+  max-height: 6em;
+  
+}
